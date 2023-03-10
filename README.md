@@ -16,3 +16,6 @@ Giao diện UI cho App Quản lý cơ sở dữ liệu trồng trọt (BTL môn 
 - MainWindow - MainWindow.xaml (Cửa sổ người dùng dành cho cán bộ nghiệp vụ)
 
 (Định nghĩa các style được đặt trong App.xaml)
+
+##Thư viện sử dụng
+MahApps Metro Iconpack: https://github.com/MahApps/MahApps.Metro.IconPacks
