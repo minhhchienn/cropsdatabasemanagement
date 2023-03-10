@@ -124,11 +124,13 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Border Grid.Column="0" CornerRadius="10" Width="250" Height="250" BorderBrush="#c3c3c3" BorderThickness="1" Margin="0,0,0,0"/>
+                            <Border Grid.Column="0" CornerRadius="10" Width="250" Height="250" BorderBrush="#c3c3c3" BorderThickness="1" Margin="0,0,0,0">
+                                <Image Source="/Resources/Avatars/default.jpg" Stretch="Fill"/>
+                            </Border>
                             <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
                                 <TextBlock FontSize="30" FontWeight="UltraBold" TextAlignment="Left" Margin="10" Text="Administrator"/>
-                                <TextBlock FontSize="20" FontWeight="SemiBold" TextAlignment="Left" Margin="10" Text="abc@gmail.com"/>
-                                <TextBlock FontSize="20" FontWeight="SemiBold" TextAlignment="Left" Margin="10" Text="Admin"/>
+                                <TextBlock FontSize="20" FontWeight="SemiBold" TextAlignment="Left" Margin="10" Text="admin@admin.com"></TextBlock>
+                                <TextBlock FontSize="20" FontWeight="SemiBold" TextAlignment="Left" Margin="10" Text="Administrator"/>
                             </StackPanel>
                             <StackPanel Grid.Column="2" VerticalAlignment="Center">
                                 <Button Style="{StaticResource Button1}" Width="300" Margin="0,20,0,0" Click="Change_Avatar" Content="Cập nhật ảnh đại diện"/>
@@ -146,23 +148,23 @@
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0" Orientation="Vertical" Height="400">
                                 <TextBlock Width="150" Height="20" Text="Họ và tên đệm" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="LastNameField" Style="{StaticResource InfoBox}" Text="{Binding presentUser.lastname}"/>
+                                <TextBox Name="LastNameField" Style="{StaticResource InfoBox}" Text="Administrator"/>
                                 <TextBlock Width="150" Height="20" Text="Tên" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="FirstNameField" Style="{StaticResource InfoBox}" Text="Administrator"/>
+                                <TextBox Name="FirstNameField" Style="{StaticResource InfoBox}" Text=""/>
                                 <TextBlock Width="150" Height="20" Text="Email" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="EmailField" Style="{StaticResource InfoBox}" Text="Administrator"/>
+                                <TextBox Name="EmailField" Style="{StaticResource InfoBox}" Text="admin@admin.com"/>
                                 <TextBlock Width="150" Height="20" Text="Giới tính" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="GenderField" Style="{StaticResource InfoBox}" Text="Administrator"/>
+                                <TextBox Name="GenderField" Style="{StaticResource InfoBox}" Text="Other"/>
                             </StackPanel>
                             <StackPanel Grid.Column="1" Orientation="Vertical" Height="400">
                                 <TextBlock Width="150" Height="20" Text="Tên tài khoản" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="UsernameField" Style="{StaticResource InfoBox}" Text="Administrator"/>
+                                <TextBox Name="UsernameField" Style="{StaticResource InfoBox}" Text="admin"/>
                                 <TextBlock Width="150" Height="20" Text="Ngày sinh" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="DoBField" Style="{StaticResource InfoBox}" Text="Administrator"/>
+                                <TextBox Name="DoBField" Style="{StaticResource InfoBox}" Text="1/1/2022"/>
                                 <TextBlock Width="150" Height="20" Text="Số điện thoại" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="NumberField" Style="{StaticResource InfoBox}" Text="Administrator"/>
+                                <TextBox Name="NumberField" Style="{StaticResource InfoBox}" Text="068686868"/>
                                 <TextBlock Width="150" Height="20" Text="Quê quán" FontSize="15" HorizontalAlignment="Left" Margin="77,15,0,0"/>
-                                <TextBox Name="CountrySideField" Style="{StaticResource InfoBox}" Text="Administrator"/>
+                                <TextBox Name="CountrySideField" Style="{StaticResource InfoBox}" Text="Hanoi"/>
                             </StackPanel>
                         </Grid>
                     </Border>
